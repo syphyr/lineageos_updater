@@ -4,14 +4,14 @@
         <title>LineageOS Downloads</title>
         <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-        <link rel="stylesheet" href="/static/site.css">
+        <link rel="stylesheet" href="/LineageOS/static/site.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="icon" sizes="16x16 32x32" href="static/favicons/favicon.ico">
-        <!--[if IE]><link rel="shortcut icon" href="static/favicons/favicon.ico"><![endif]-->
-        <link rel="apple-touch-icon-precomposed" href="static/favicons/favicon-152.png">
+        <link rel="icon" sizes="16x16 32x32" href="/LineageOS/static/favicons/favicon.ico">
+        <!--[if IE]><link rel="shortcut icon" href="/LineageOS/static/favicons/favicon.ico"><![endif]-->
+        <link rel="apple-touch-icon-precomposed" href="/LineageOS/static/favicons/favicon-152.png">
         <meta name="theme-color" content="#167C80">
         <meta name="msapplication-TileColor" content="#167C80">
-        <meta name="msapplication-TileImage" content="static/favicons/favicon-144.png">
+        <meta name="msapplication-TileImage" content="/LineageOS/static/favicons/favicon-144.png">
     </head>
     <body>
         <nav>
@@ -21,9 +21,9 @@
                     <li>
                         <div class="userView">
                             <div class="background">
-                                <img src="/static/iconoclast.png">
+                                <img src="/LineageOS/static/iconoclast.png">
 </div>
-                            <a href="#!user"><img class="logo circle" src="/static/logo.png" height=128px width=128px /></a>
+                            <a href="#!user"><img class="logo circle" src="/LineageOS/static/logo.png" height=128px width=128px /></a>
                             <a href="#!name"><span class="white-text name">Devices</span></a>
                         </div>
                     </li>
@@ -42,12 +42,12 @@
                                         {% if device.oem == oem %}
                                         {% if active_device %}
                                         {% if device.model == active_device.model %}
-                                        <li class="active grey darken-2"><a href="/{{device.model}}">{{device.name}} ({{device.model}})</a></li>
+                                        <li class="active grey darken-2"><a href="/LineageOS/{{device.model}}">{{device.name}} ({{device.model}})</a></li>
                                         {% else %}
-                                        <li ><a href="/{{device.model}}">{{device.name}} ({{device.model}})</a></li>
+                                        <li ><a href="/LineageOS/{{device.model}}">{{device.name}} ({{device.model}})</a></li>
                                         {% endif %}
                                         {% else %}
-                                        <li ><a href="/{{device.model}}">{{device.name}} ({{device.model}})</a></li>
+                                        <li ><a href="/LineageOS/{{device.model}}">{{device.name}} ({{device.model}})</a></li>
                                         {% endif %}
                                         {% endif %}
                                         {% endfor %}
@@ -61,9 +61,9 @@
                         <ul class="collapsible collapsible-accordian">
                             <li class="bold">
                                 {% if extras %}
-                                <a class="collapsible-header waves-effect waves-teal bold active" href="/extras">Extras</a>
+                                <a class="collapsible-header waves-effect waves-teal bold active" href="/LineageOS/extras">Extras</a>
                                 {% else %}
-                                <a class="collapsible-header waves-effect waves-teal bold" href="/extras">Extras</a>
+                                <a class="collapsible-header waves-effect waves-teal bold" href="/LineageOS/extras">Extras</a>
                                 {% endif %}
                             </li>
                         </ul>
