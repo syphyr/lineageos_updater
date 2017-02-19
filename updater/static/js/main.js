@@ -98,7 +98,7 @@ function renderChanges(data, textStatus, xhr) {
 
 function loadMore() {
     document.getElementById("changes").innerHTML += '<li class="collection-item loading">Loading...</li>';
-    $.getJSON('/api/v1/changes/' + device + '/' + lastChangeTime + '/', null, function(data, textStatus, xhr) {
+    $.getJSON('/LineageOS/api/v1/changes/' + device + '/' + lastChangeTime + '/', null, function(data, textStatus, xhr) {
         $('#changes .loading').remove();
         renderChanges(data, textStatus, xhr);
         onScroll(); // if we don't have >1 window of changes, load more
@@ -109,7 +109,7 @@ loading = false;
 $(document).ready(function() {
     loading = true;
 
-    $.getJSON('/api/v1/' + device + '/nightly/abc', null, function(data, textStatus, xhr) {
+    $.getJSON('/LineageOS/api/v1/' + device + '/nightly/abc', null, function(data, textStatus, xhr) {
         builds = data.response;
         currentBuildIndex = builds.length - 1;
         while (currentBuildIndex >= 0 && currentBuildIndex < builds.length && Date.now() < builds[currentBuildIndex].datetime) {
