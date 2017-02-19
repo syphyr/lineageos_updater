@@ -36,6 +36,7 @@
                                 </td>
                                 <td>{% if rom.romsize %} {{'%0.2f'| format(rom.romsize/1024/1024|float)}} {% else %} 0.00 {% endif %} MB</td>
                                 <td>{{rom.datetime.strftime("%Y-%m-%d %H:%M:%S %Z")}}</td>
+                                <td><a href="{{rom.changes}}">Changelog</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
