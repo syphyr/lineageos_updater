@@ -6,7 +6,7 @@
         <div class="col s12 m12 l12">
             <div class="card-panel">
                 <h4>Builds for {{active_device.model}}</h4>
-                <strong><a href="/{{active_device.model}}/changes/">Show all merged changes for {{active_device.model}}</a></strong>
+                <strong><a href="/LineageOS/{{active_device.model}}/changes/">Show all merged changes for {{active_device.model}}</a></strong>
                 <div class="scrollable-table">
                     <table class="striped bordered">
                         <thead>
@@ -29,7 +29,7 @@
                                 </td>
                                 <td>{% if rom.romsize %} {{'%0.2f'| format(rom.romsize/1024/1024|float)}} {% else %} 0.00 {% endif %} MB</td>
                                 <td>{{rom.datetime.strftime("%Y-%m-%d %H:%M:%S %Z")}}</td>
-                                <td><a href="/{{rom.device}}/changes/{{get_timestamp(rom.datetime)}}">Changelog</a></td>
+                                <td><a href="/LineageOS/{{rom.device}}/changes/{{get_timestamp(rom.datetime)}}">Changelog</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>

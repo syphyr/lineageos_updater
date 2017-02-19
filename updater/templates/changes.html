@@ -4,7 +4,7 @@
 device = "{{ device }}";
 lastChangeTime = {{ before }};
 </script>
-<script type="text/javascript" src="/static/js/main.js" ></script>
+<script type="text/javascript" src="/LineageOS/static/js/main.js" ></script>
 {% endblock %}
 {% block content %}
 <div class="container">
@@ -14,7 +14,7 @@ lastChangeTime = {{ before }};
         {% set device = "all devices" %}
         {% set back = 0 %}
         {% endif %}
-        <li class="collection-header"><h4>Changes for {{ device }}</h4>{% if back != 0 %}<a id="back" href="/{{ back }}">back</a>{% endif %}</li>
+        <li class="collection-header"><h4>Changes for {{ device }}</h4>{% if back != 0 %}<a id="back" href="/LineageOS/{{ back }}">back</a>{% endif %}</li>
     </div>
 
 </div>
