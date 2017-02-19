@@ -16,7 +16,7 @@
                                 <th>File</th>
                                 <th>Size</th>
                                 <th>Date</th>
-                                <th><!-- changelog --></th>
+                                <th>Changes</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -29,7 +29,7 @@
                                 </td>
                                 <td>{% if rom.romsize %} {{'%0.2f'| format(rom.romsize/1024/1024|float)}} {% else %} 0.00 {% endif %} MB</td>
                                 <td>{{rom.datetime.strftime("%Y-%m-%d %H:%M:%S %Z")}}</td>
-                                <td><a href="/LineageOS/{{rom.device}}/changes/{{get_timestamp(rom.datetime)}}">Changelog</a></td>
+                                <td><a href="/LineageOS/{{rom.device}}/changes/{{get_timestamp(rom.datetime)}}">Gerrit</a> <br /><a href="{{rom.changes}}">Log</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>

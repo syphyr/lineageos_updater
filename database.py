@@ -14,6 +14,7 @@ class Rom(Document):
     md5sum = StringField(required=True)
     url = StringField()
     romsize = IntField()
+    changes = StringField()
 
     @classmethod
     def get_roms(cls, device, romtype=None, before=3600):
