@@ -1,6 +1,6 @@
 MONGODB_DB = 'lineageos_updater'
-MONGODB_USERNAME = 'user'
-MONGODB_PASSWORD = 'pass'
+MONGODB_USERNAME = ''
+MONGODB_PASSWORD = ''
 MONGODB_HOST = '127.0.0.1'
 MONGODB_PORT = 27017
 
@@ -12,5 +12,5 @@ STATUS_URL = 'https://status.lineageos.org'
 WIKI_INFO_URL = 'https://wiki.lineageos.org/devices/{device}'
 WIKI_INSTALL_URL = 'https://wiki.lineageos.org/devices/{device}/install'
 
-BUILD_SYNC_TIME = 3600
+BUILD_SYNC_TIME = 0
 CACHE_TYPE = "simple"
