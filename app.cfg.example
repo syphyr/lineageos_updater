@@ -1,9 +1,9 @@
 MONGODB_DB = 'lineageos_updater'
-MONGODB_USERNAME = 'user'
-MONGODB_PASSWORD = 'pass'
+MONGODB_USERNAME = ''
+MONGODB_PASSWORD = ''
 MONGODB_HOST = '127.0.0.1'
 MONGODB_PORT = 27017
 
 GERRIT_URL = 'https://review.lineageos.org'
-BUILD_SYNC_TIME = 3600
+BUILD_SYNC_TIME = 0
 CACHE_TYPE = "simple"
