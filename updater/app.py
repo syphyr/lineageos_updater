@@ -232,11 +232,3 @@ def web_device(device):
 
     return render_template("device.html", active_oem=active_oem, active_device=active_device, oems=oems, devices=devices, roms=roms, get_timestamp=get_timestamp,
             wiki_info=app.config['WIKI_INFO_URL'], wiki_install=app.config['WIKI_INSTALL_URL'])
-
-@app.route("/extras")
-@cache.cached(timeout=3600)
-def web_extras():
-    devices = sorted([x for x in Device.get_devices() if x['model'] in Rom.get_devices()], key=lambda device: device['name'])
-    oems = sorted(list(set([x['oem'] for x in devices])))
-
-    return render_template("extras.html", active_device=None, oems=oems, devices=devices, extras=True)
